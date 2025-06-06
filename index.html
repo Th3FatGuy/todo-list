@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header__text">
+                TODO List Demo App
+            </div>
+            <div class="header__quote">
+                Do it now.
+            </div>
+        </div>
+        <div class="table">
+            <div class="table__btn">
+                <button id="askTaskBtn" class="table__btn__addTask">Add Task</button>
+                <div class="clear"></div>
+            </div>
+            <table class="taskTable">
+                <thead>
+                    <tr>
+                        <th class="taskTable__head__id">#</th>
+                        <th class="taskTable__head__name">Task Name</th>
+                        <th class="taksTable__head__status">Status</th>
+                        <th class="taksTable__head__edit">Edit</th>
+                        <th class="taksTable__head__delete">Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="taskTable__body">
+                    <tr>
+                        <td class="taskTable__body__id">1</td>
+                        <td class="taskTable__body__name">Sample Task</td>
+                        <td class="taskTable__body__status">
+                            <select name="StatusDropdown" id="statusDropdown">
+                                <option class="taskTable__body__status--todo" value="todo">To Do</option>
+                                <option class="taskTable__body__status--inprocess" value="inProcess">In Process</option>
+                                <option class="taskTable__body__status--completed" value="completed">Completed</option>
+                            </select>
+                        </td>
+                        <td class="taskTable__body__edit">
+                            <button class="taskTable__body__edit__editBtn"><i class="ti-pencil"></i></button>
+                        </td>
+                        <td class="taskTable__body__delete">
+                            <button class="taskTable__body__delete__deleteBtn"><i class="ti-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="taskTable__body__id">2</td>
+                        <td class="taskTable__body__name">Sample Task 2</td>
+                        <td class="taskTable__body__status">On going</td>
+                        <td class="taskTable__body__edit">
+                            <button class="taskTable__body__edit__editBtn"><i class="ti-pencil"></i></button>
+                        </td>
+                        <td class="taskTable__body__delete">
+                            <button class="taskTable__body__delete__deleteBtn"><i class="ti-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./assets/js/function.js"></script>
+</body>
+</html>

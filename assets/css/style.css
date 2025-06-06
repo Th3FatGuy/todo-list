@@ -1,0 +1,135 @@
+:root{
+    --light-blue: #80d4f9;
+    --white: #fff;
+    --black: #000;
+    --grey: #505050;
+    --blue: #007bff;
+}
+
+/* Reusable & environment classes */
+body {
+    font-family: sans-serif;
+    padding: 40px 5%;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/* Header zone */
+.header{
+    width: 100%;
+    margin: 40px auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.header__text{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.header__quote{
+    background-color: #f7f3d6;
+    padding: 4px;
+    margin-left: 2px;
+    margin-top: 8px;
+    display: inline-block;
+}
+/* Table zone */
+
+.table{
+    width: 100%;;
+}
+
+.table__btn{
+    width: 100%;
+}
+
+.table__btn__addTask{
+    display: block;
+    float: right;
+    background-color: var(--white);
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.table__btn__addTask:hover{
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+.taskTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+th, td{
+    padding: 15px;
+    text-align: left;
+}
+
+th{
+    border-bottom: 1.5px solid var(--black);
+}
+
+td{
+    border-bottom: 1px solid var(--grey);
+    padding: auto 20px;
+}
+
+.taskTable__head__edit,
+.taskTable__head__delete,
+.taskTable__head__id{
+    width: 5%;
+}
+
+.taskTable__head__status{
+    width: 17%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.taskTable__head__name{
+    text-align: center;
+    width: 68%;
+}
+
+/* .taskTable__body__delete,
+.tasktable__body__edit{
+    padding: 15px;
+    display: block;
+} */
+
+.taskTable__body__edit__editBtn{
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding-top: 5px;
+}
+
+.taskTable__body__edit__editBtn:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.taskTable__body__delete__deleteBtn{
+    background-color: var(--white);
+    color: var(--grey);
+    padding-top:5px;
+    padding-right: 7px;
+    padding-bottom: 2px;
+    border: 1px solid var(--grey);
+}
+
+.taskTable__body__delete__deleteBtn:hover{
+    background-color: var(--grey);
+    color: var(--white);
+}
+
