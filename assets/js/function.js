@@ -33,10 +33,10 @@ function renderTasks() {
         </select>
       </td>
       <td class="taskTable__body__edit">
-        <button onclick="editTask(${index})"><i class="ti-pencil"></i></button>
+        <button class="taskTable__body__edit__editBtn" onclick="editTask(${index})"><i class="ti-pencil"></i></button>
       </td>
       <td class="taskTable__body__delete">
-        <button onclick="removeTask(${index})"><i class="ti-trash"></i></button>
+        <button class="taskTable__body__delete__deleteBtn" onclick="removeTask(${index})"><i class="ti-trash"></i></button>
       </td>
     `;
 
@@ -50,7 +50,6 @@ function updateStatus(index, newStatus) {
   saveTasks();
 }
 
-// Đổi tên task
 function editTask(index) {
   const taskNames = Object.keys(tasks);
   const oldName = taskNames[index];
@@ -59,14 +58,13 @@ function editTask(index) {
   if (!newName || newName === oldName) return;
 
   const status = tasks[oldName];
-  delete tasks[oldName];
+
   tasks[newName] = status;
 
   saveTasks();
   renderTasks();
 }
 
-// Xóa task
 function removeTask(index) {
   const taskNames = Object.keys(tasks);
   const taskNameToDelete = taskNames[index];
@@ -76,9 +74,12 @@ function removeTask(index) {
   renderTasks();
 }
 
-// Lưu tasks vào localStorage
 function saveTasks() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
 }
 
 window.onload = renderTasks;
+
+function searchTaskt(){
+   
+}

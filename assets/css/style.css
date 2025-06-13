@@ -133,3 +133,32 @@ td{
     color: var(--white);
 }
 
+.taskTable__body__status--zone{
+    width: 85%;
+    padding: 5px;
+    align-items: center;
+}
+
+.taskTable__body__status--select__text{
+    padding: 5px;
+    display: block;
+    border: 1px solid var(--black);
+    font-size: 0.9rem;
+}
+
+.taskTable__body__status--select__text > ti-angle-down{
+    font-size: 0.6rem;
+    margin-right: 6px;
+}
+
+.taskTable__body__status--zone:hover .taskTable__body__status--subdiv{
+    display: block;
+}
+
+.taskTable__body__status--subdiv{
+    width: 1em;
+    padding: 5px;
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
