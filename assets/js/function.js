@@ -112,4 +112,9 @@ function searchTask(value){
   renderNewTasks(filteredTasks);
 }
 
+function clearSearch() {
+  document.querySelector(".table__search__input").value = "";
+  renderTasks();
+}
+
 window.onload = renderTasks;
